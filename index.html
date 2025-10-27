@@ -102,6 +102,36 @@
       text-decoration: none;
       margin-top: 15px;
     }
+    /* Bagian Review */
+    #reviews {
+      background-color: #fff;
+      padding: 40px 20px;
+      margin-top: 40px;
+    }
+    #reviews h2 {
+      text-align: center;
+      color: #b83b5e;
+    }
+    .review-container {
+      max-width: 900px;
+      margin: 20px auto;
+      display: grid;
+      gap: 20px;
+    }
+    .review {
+      background-color: #fff0f3;
+      padding: 15px;
+      border-radius: 12px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    }
+    .review h4 {
+      margin: 0;
+      color: #ff6f61;
+    }
+    .stars {
+      color: #ffc107;
+      margin: 5px 0;
+    }
     footer {
       background-color: #fddde6;
       text-align: center;
@@ -113,45 +143,45 @@
 </head>
 <body>
   <header>
-    <h1>Toko Kue  🍰 </h1>
-    <p>Potonglah momen-momen manis, satu kue pada satu waktu!</p>
+    <h1>Toko Kue 🍰</h1>
+    <p>Potonglah momen manis, satu kue pada satu waktu!</p>
   </header>
 
   <section class="container">
     <!-- Produk 1 -->
     <div class="card">
       <img src="https://image.makewebeasy.net/makeweb/m_1920x0/rGAbosWut/DefaultData/AGS_0541_min.jpg" alt="Kue Stroberi">
-      <h3>Kue ulang tahun</h3>
+      <h3>Kue Ulang Tahun</h3>
       <p class="price">Rp150.000</p>
       <p>Kue lembut dengan lapisan krim stroberi segar di atasnya.</p>
-      <button class="button" onclick="addToCart('Kue ulang tahun', 150000)">Tambah ke Keranjang</button>
+      <button class="button" onclick="addToCart('Kue Ulang Tahun', 150000)">Tambah ke Keranjang</button>
     </div>
 
     <!-- Produk 2 -->
     <div class="card">
-      <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/3425045a-61c4-425a-a3bc-12d292ff2889/Derivates/8e21a1c1-5422-489d-ad16-d44d0e72fd0a.jpg" alt="Kue Mangga">
-      <h3>bronis</h3>
+      <img src="https://assets.tmecosys.com/image/upload/t_web_rdp_recipe_584x480_1_5x/img/recipe/ras/Assets/3425045a-61c4-425a-a3bc-12d292ff2889/Derivates/8e21a1c1-5422-489d-ad16-d44d0e72fd0a.jpg" alt="Brownies">
+      <h3>Brownies</h3>
       <p class="price">Rp35.000</p>
-      <p>Kue bronis pugdy coklat .</p>
-      <button class="button" onclick="addToCart('Kue Mangga', 35000)">Tambah ke Keranjang</button>
+      <p>Brownies coklat fudgy, lembut dan padat dengan aroma menggoda.</p>
+      <button class="button" onclick="addToCart('Brownies', 35000)">Tambah ke Keranjang</button>
     </div>
 
     <!-- Produk 3 -->
     <div class="card">
-      <img src="https://caratsandcake.com/_images/cache/wedding-cake-bakery-the-hunt-01-62339d2e410a2-195595-1647549833.jpg" alt="Kue Blueberry">
-      <h3>kue nikahan </h3>
+      <img src="https://caratsandcake.com/_images/cache/wedding-cake-bakery-the-hunt-01-62339d2e410a2-195595-1647549833.jpg" alt="Kue Nikahan">
+      <h3>Kue Nikahan</h3>
       <p class="price">Rp350.000</p>
-      <p>Kue lembut dengan isian selaiberpariatif dan krim lembut di atasnya.</p>
-      <button class="button" onclick="addToCart('Kue Blueberry', 350000)">Tambah ke Keranjang</button>
+      <p>Kue berlapis indah dengan rasa dan tampilan premium untuk hari spesialmu.</p>
+      <button class="button" onclick="addToCart('Kue Nikahan', 350000)">Tambah ke Keranjang</button>
     </div>
 
     <!-- Produk 4 -->
     <div class="card">
-      <img src="https://www.recipetineats.com/tachyon/2024/09/No-bake-cheesecake_8.jpg" alt="Kue Kiwi">
-      <h3>cheese cake</h3>
+      <img src="https://www.recipetineats.com/tachyon/2024/09/No-bake-cheesecake_8.jpg" alt="Cheese Cake">
+      <h3>Cheese Cake</h3>
       <p class="price">Rp26.000</p>
-      <p>Kue lembut dengan lapisan krim keju.</p>
-      <button class="button" onclick="addToCart('cheese cake', 26000)">Tambah ke Keranjang</button>
+      <p>Kue lembut dengan lapisan krim keju yang meleleh di lidah.</p>
+      <button class="button" onclick="addToCart('Cheese Cake', 26000)">Tambah ke Keranjang</button>
     </div>
   </section>
 
@@ -163,8 +193,35 @@
     <a href="#" id="checkout-btn" onclick="checkout()">Lanjut ke Checkout</a>
   </section>
 
+  <!-- Review Pelanggan -->
+  <section id="reviews">
+    <h2>💬 Review Pelanggan</h2>
+    <div class="review-container">
+      <div class="review">
+        <h4>🌟 Sinta - ⭐⭐⭐⭐⭐</h4>
+        <p>Cheese cakenya enak banget! Teksturnya lembut dan rasanya pas, tidak terlalu manis. Recommended banget!</p>
+      </div>
+      <div class="review">
+        <h4>🌟 Dimas - ⭐⭐⭐⭐☆</h4>
+        <p>Kue ulang tahunnya cantik dan rasanya lembut. Pengiriman cepat juga. Cuma toppingnya agak meleleh dikit, tapi masih oke.</p>
+     </div>
+      <div class="review">
+        <h4>🌟 sazkiah - ⭐⭐⭐⭐⭐</h4>
+        <p>enak banget pelayananya baik banget. Pasti beli lagi!</p>
+        </div>
+      <div class="review">
+        <h4>🌟 sapitri - ⭐⭐⭐⭐⭐</h4>
+        <p>terimaksi kue pernikahnya sudah sedah menglekapi pernikahan ini<3 !</p>
+    </div>
+      <div class="review">
+        <h4>🌟 Rani - ⭐⭐⭐⭐⭐</h4>
+        <p>Browniesnya lembut banget dan aroma coklatnya kuat. Pasti beli lagi!</p>
+      </div>
+    </div>
+  </section>
+
   <footer>
-    <p>&copy; 2025 Toko Kue Buah | Lezat, Lembut, dan Segar di Setiap Gigitan 🍰</p>
+    <p>&copy; 2025 Toko Kue | Lezat, Lembut, dan Bahagia Setiap Gigitan 🍩</p>
   </footer>
 
   <script>
@@ -203,17 +260,17 @@
         alert("Keranjang masih kosong!");
         return;
       }
-      let message = "Halo! Saya ingin memesan kue buah berikut:%0A";
+      let message = "Halo! Saya ingin memesan kue berikut:%0A";
       cart.forEach(item => {
         message += `- ${item.name} (Rp${item.price.toLocaleString()})%0A`;
       });
       const total = cart.reduce((sum, item) => sum + item.price, 0);
       message += `%0ATotal: Rp${total.toLocaleString()}`;
-      window.open(`https://wa.me/087872428499?text=${message}`, "_blank");
+      window.open(`https://wa.me/6287872428499?text=${message}`, "_blank");
     }
   </script>
 
-  <!-- Google Analytics (ganti dengan ID milikmu) -->
+  <!-- Google Analytics (ganti ID di sini) -->
   <!--
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>
